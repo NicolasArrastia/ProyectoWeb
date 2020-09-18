@@ -1,0 +1,251 @@
+html {
+
+    font-size: 10px;
+
+}
+
+* {
+
+    margin: 0px;
+
+    padding: 0px;
+
+    box-sizing: border-box;
+
+}
+
+*:not(.logo-txt){
+    translate: all;
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+body {
+
+    font-size: 1.6rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*========== HEADER ==========*/
+
+header {
+
+    position: fixed;
+
+    width: 100%;
+
+    background-color: #1a1a1a;
+
+    padding: 1rem;
+}
+
+.header{
+    display: flex;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+/* HEADER LOGO */
+
+.header-logo {
+    
+    display: flex;
+
+    align-items: center;
+
+}
+
+.logo-txt{
+
+    padding: 0 1rem;
+
+    color: #fff;
+    
+}
+
+.header-logo * {
+
+    display: inline-block;
+
+}
+
+.logo {
+
+    cursor: pointer;
+
+    width: 5rem;
+
+}
+
+/* HEADER MENU */
+.nav-area {
+
+    list-style: none;
+
+}
+
+.nav-area li {
+
+    display: inline-block;
+
+    padding: 0 3rem;
+
+    text-transform: uppercase;
+
+}
+
+.nav-area li a {
+
+    color: #fff;
+    
+    /* font-weight: bold; */
+
+    font-size: 2rem;
+
+}
+
+.nav-area li a:hover {
+
+    color: #808080;
+    
+
+    transition: all .3s ease 0s;
+    
+}
+
+/*========== MAIN ==========*/
+
+main{
+background-color: #d6d6d6;
+
+
+    padding-top: 7.3rem;
+
+    padding-bottom: 3rem;
+
+}
+
+.main-container{
+
+    display: flex;
+    
+    max-width: 1200px;
+
+    margin: auto;
+
+    width: 90%;
+
+}
+
+.main-txt{
+
+    padding: 3rem;
+
+    width: 100%;
+
+}
+
+.tiny-galery{
+    display: flex;
+
+
+
+}
+
+
+/*========== FOOTER ==========*/
+
+footer{
+
+    background-color: #1a1a1a;
+
+    color: white;
+
+}
+
+.footer-container{
+
+    display: flex;
+
+    margin: auto;
+
+    max-width: 1200px;
+
+    justify-content: space-around;
+
+    padding: 2rem;
+
+}
+
+.footer-container>div{
+
+    padding: 2rem;
+    
+    width: 30%;
+
+    border: 1px solid blue;
+
+    text-align: center;
+}
+
+.fabs-container{
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+.footer-fab{
+
+    display: flex;
+
+    width: 5rem;
+
+    height: 5rem;
+    
+    min-width: 5rem;
+
+    min-height: 5rem;
+
+    border: 3px solid white;
+
+    border-radius: 2.5rem;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.footer-fab .fab{
+
+    font-size: 3rem;
+
+    color: white;
+
+}
+
+.copyright{
+
+    background-color: #2e2e2e;
+
+    padding: 1rem;
+
+    width: 100%;
+
+    text-align: center;
+
+}
