@@ -2,13 +2,13 @@
 /* font-family: 'Dancing Script', cursive; */
 
 html {
-    font-size: 10px; 
+    font-size: 10px;
 }
 
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 a {
@@ -36,7 +36,7 @@ header {
     max-height: 7.5rem;
 }
 
-.header{
+.header {
     display: flex;
     max-width: 1200px;
     margin: auto;
@@ -52,7 +52,7 @@ header {
     align-items: center;
 }
 
-.logo-txt{
+.logo-txt {
     padding: 0 1rem;
 }
 
@@ -63,17 +63,18 @@ header {
 .logo {
     width: 5rem;
 }
-.logo:hover{
+
+.logo:hover {
     animation: logo-animation .7s ease 0s;
 }
 
 /* HEADER MENU ICON */
 
-#btn-menu{
+#btn-menu {
     display: none;
 }
 
-.menu{
+.menu {
     display: none;
     cursor: pointer;
     font-size: 3rem;
@@ -81,6 +82,7 @@ header {
     padding: 0 1rem;
     /* transition: all .3s ease 0s; */
 }
+
 /* 
 .menu:hover{
     color: #7c7c7c;
@@ -108,12 +110,16 @@ header {
     transition: all .3s ease 0s;
 }
 
+.nav-area i{
+    display: none;
+}
+
 .nav-area li a:hover {
     color: #7c7c7c;
     transition: all .3s ease 0s;
 }
 
-.nav-area li a:active{
+.nav-area li a:active {
     color: #87a7f0;
 }
 
@@ -125,7 +131,7 @@ header {
 /*========== MAIN ==========*/
 
 /* SLIDER TEXTOS */
-.slider-container{
+.slider-container {
     margin: auto;
     background-color: #fff;
     width: 100%;
@@ -133,7 +139,7 @@ header {
     padding: 0;
 }
 
-.imagen{
+.imagen {
     display: flex;
     flex-wrap: wrap;
     background-color: #fff;
@@ -146,43 +152,44 @@ header {
     font-family: 'Dancing Script', cursive;
 }
 
-.imagen>*{
+.imagen>* {
     width: 65%;
 }
 
-.imagen q{
+.imagen q {
     quotes: none;
 }
 
-.bg1{
-    background-image: linear-gradient(160deg,violet,yellow);
+.bg1 {
+    background-image: linear-gradient(160deg, violet, yellow);
 }
 
-.bg2{
-    background-image: linear-gradient(300deg,lightgreen,#ff7b7b);
+.bg2 {
+    background-image: linear-gradient(300deg, lightgreen, #ff7b7b);
 }
 
-.bg3{
-    background-image: linear-gradient(200deg,#ffa435,#7ed4ff);
+.bg3 {
+    background-image: linear-gradient(200deg, #ffa435, #7ed4ff);
 }
 
-.bg4{
-    background-image: linear-gradient(45deg,#9BFF47,#E283EB);
+.bg4 {
+    background-image: linear-gradient(45deg, #9BFF47, #E283EB);
 }
 
-ul,li{
+ul,
+li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-ul.slider{
+ul.slider {
     position: relative;
     width: 100%;
     height: 45rem;
 }
 
-ul.slider li{
+ul.slider li {
     position: absolute;
     left: 0;
     top: 0;
@@ -192,33 +199,33 @@ ul.slider li{
     transition: opacity .5s;
 }
 
-ul.slider li img{
+ul.slider li img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-ul.slider li:first-child{
+ul.slider li:first-child {
     opacity: 1;
 }
 
-ul.slider li:target{
+ul.slider li:target {
     opacity: 1;
 }
 
-.slider-nav{
+.slider-nav {
     text-align: center;
     position: relative;
     top: 4rem;
 }
 
-.slider-nav li{
+.slider-nav li {
     display: inline-block;
     text-align: center;
     padding: 0 .5rem;
 }
 
-.slider-nav li a{
+.slider-nav li a {
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -229,81 +236,83 @@ ul.slider li:target{
     border-radius: 1rem;
 }
 
-.slider-nav li a:hover{
+.slider-nav li a:hover {
     background-color: #636363;
 
     transition: all .3s ease 0s;
 }
+
 /* CONTENIDO */
-.main-container{
+.main-container {
     background-color: #fff;
     width: 90%;
     margin: auto;
     max-width: 1200px;
     padding-top: auto;
 }
+
 /* PARTE DE TEXTO */
-.principal-content{
+.principal-content {
     display: flex;
     margin: 7.5rem auto 0;
 }
+
 /* TEXTO PRINCIPAL Y ASIDE */
-.main-txt{
+.main-txt {
     width: 70%;
 }
 
 .main-txt,
-.principal-content>aside{
+.principal-content>aside {
     padding: 3rem;
     line-height: 2.8rem;
     text-align: justify;
 }
 
-.principal-content>aside{
+.principal-content>aside {
     width: 30%;
     background-color: #e9f9ff;
 }
 
 .principal-content>aside>div:not(:first-child),
-.main-txt>div:not(:first-child){
+.main-txt>div:not(:first-child) {
     padding-top: 2rem;
 }
 
 .principal-content>aside h2,
-.main-txt h2{
+.main-txt h2 {
     text-decoration: underline;
     font-size: 3rem;
     padding-bottom: 1rem;
 }
 
-.principal-content>aside h3
-.main-txt h3{
+.principal-content>aside h3 .main-txt h3 {
     text-decoration: none;
     font-style: 2.2rem;
     padding: 0;
 }
 
-.main-txt p{
+.main-txt p {
     text-indent: 3rem;
 }
 
-.aside-img{
+.aside-img {
     display: flex;
     justify-content: space-between;
 }
 
-.aside-img img{
+.aside-img img {
     width: 46%;
 }
 
 /*========== FOOTER ==========*/
 
-footer{
+footer {
     background-color: #262e41;
     color: white;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     margin: auto;
     max-width: 1200px;
@@ -311,22 +320,22 @@ footer{
     padding: 2rem;
 }
 
-.footer-container h3{
+.footer-container h3 {
     margin-bottom: 1rem;
 }
 
-.footer-container>div{
+.footer-container>div {
     padding: 2rem;
     width: 30%;
     text-align: center;
 }
 
-.fabs-container{
+.fabs-container {
     display: flex;
     justify-content: space-around;
 }
 
-.footer-fab{
+.footer-fab {
     display: flex;
     width: 5rem;
     height: 5rem;
@@ -339,12 +348,12 @@ footer{
     margin: 0 .5rem;
 }
 
-.footer-fab .fab{
+.footer-fab .fab {
     font-size: 2.9rem;
     color: white;
 }
 
-.copyright{
+.copyright {
     background-color: #3c4864;
     font-size: 1rem;
     padding: 1rem;
@@ -354,12 +363,12 @@ footer{
 
 /*========== MEDIA QUERYS ==========*/
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1024px) {
     /* HEADER */
 
-    .header .nav-area{
+    .header .nav-area {
         position: absolute;
-        background-color: #262e41;
+        background-color: #364363;
         flex-direction: column;
         left: 0;
         top: 7.5rem;
@@ -368,62 +377,78 @@ footer{
         transition: all .25s ease 0s;
     }
 
-    .nav-area li{
+    .nav-area li {
         display: block;
         width: 100%;
+        margin: 2rem 0;
         padding: 2rem;
+        font-size: 1rem;
     }
 
-    .header{
+    .header {
         justify-content: center;
     }
 
-    .menu{
+    .menu {
         display: block;
         position: absolute;
         left: 1rem;
-        top: 2.25rem;        
+        top: 2.25rem;
         cursor: pointer;
         font-size: 3rem;
         color: white;
         padding: 0 1rem;
     }
 
-    #btn-menu:checked ~ nav .nav-area{
+    #btn-menu:checked~nav .nav-area {
         margin-left: 0%;
         transition: all .5s ease 0s;
     }
+
+    .nav-area i{
+        display: inline;
+        padding-right: 2rem;
+        font-size: 2rem;
+    }
+
     /* MAIN */
     /* FOOTER */
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
+
     /* HEADER */
     /* MAIN */
-    .main-container{
+    .main-container {
         width: 100%;
     }
-    .principal-content{
+
+    .principal-content {
         display: block;
     }
+
     .principal-content>.main-txt,
-    .principal-content>aside{
+    .principal-content>aside {
         width: 100%;
     }
+
     .main-txt p,
-    .principal-content>aside p{
+    .principal-content>aside p {
         text-indent: 0rem;
     }
+
     /* FOOTER */
-    .footer-container{
+    .footer-container {
         flex-direction: column;
         align-items: center;
     }
-    .footer-container>div{
+
+    .footer-container>div {
         width: 80%;
         margin: .5rem 0;
     }
-    .fabs-container{
+
+    .fabs-container {
         display: flex;
         flex-wrap: nowrap;
         width: 80%;
@@ -431,24 +456,27 @@ footer{
     }
 
 }
+
 /* max-width:320px */
-@media screen and (max-width:425px){
+@media screen and (max-width:425px) {
+
     /* HEADER */
-    .logo-txt{
+    .logo-txt {
         display: none;
     }
+
     /* MAIN */
-    .imagen>div{
+    .imagen>div {
         width: 80%;
     }
 
-    .slider-nav{
+    .slider-nav {
         text-align: center;
         position: relative;
         top: 3rem;
     }
 
-    .slider-nav li a{
+    .slider-nav li a {
         display: inline-block;
         color: white;
         text-decoration: none;
@@ -458,19 +486,21 @@ footer{
         font-style: 2rem;
         border-radius: 1.5rem;
     }
+
     /* FOOTER */
-    
+
 }
 
-@keyframes logo-animation{
-
-    20%{
+@keyframes logo-animation {
+    20% {
         transform: rotate(8deg);
     }
-    50%{
+
+    50% {
         transform: rotate(-16deg);
     }
-    80%{
+
+    80% {
         transform: rotate(8deg);
     }
 }
