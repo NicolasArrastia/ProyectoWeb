@@ -42,6 +42,7 @@ header {
     margin: auto;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 /* HEADER LOGO */
@@ -53,7 +54,6 @@ header {
 
 .logo-txt{
     padding: 0 1rem;
-    color: #fff;
 }
 
 .header-logo * {
@@ -61,20 +61,43 @@ header {
 }
 
 .logo {
-    cursor: pointer;
     width: 5rem;
 }
 .logo:hover{
     animation: logo-animation .7s ease 0s;
 }
-/* HEADER MENU */
+
+/* HEADER MENU ICON */
+
+#btn-menu{
+    display: none;
+}
+
+.menu{
+    display: none;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    padding: 0 1rem;
+    /* transition: all .3s ease 0s; */
+}
+/* 
+.menu:hover{
+    color: #7c7c7c;
+    transition: all .3s ease 0s;
+} */
+
+/* HEADER NAV */
 .nav-area {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .nav-area li {
     display: inline-block;
-    padding: 0 2rem;
+    padding-left: 2rem;
     max-width: 15rem;
     text-transform: uppercase;
 }
@@ -90,12 +113,18 @@ header {
     transition: all .3s ease 0s;
 }
 
+.nav-area li a:active{
+    color: #87a7f0;
+}
+
+
 /* .nav-area li:not(:first-child){
     border-left: 1px solid white;
 } */
 
 /*========== MAIN ==========*/
 
+/* SLIDER TEXTOS */
 .slider-container{
     margin: auto;
     background-color: #fff;
@@ -121,6 +150,10 @@ header {
     width: 65%;
 }
 
+.imagen q{
+    quotes: '"' '"';
+}
+
 .bg1{
     background-image: linear-gradient(160deg,violet,yellow);
 }
@@ -136,7 +169,6 @@ header {
 .bg4{
     background-image: linear-gradient(45deg,#9BFF47,#E283EB);
 }
-
 
 ul,li{
     margin: 0;
@@ -191,7 +223,7 @@ ul.slider li:target{
     color: white;
     text-decoration: none;
     background-color: #424242;
-    width: 10rem;
+    width: 8rem;
     height: 2rem;
     font-style: 2rem;
     border-radius: 1rem;
@@ -202,7 +234,7 @@ ul.slider li:target{
 
     transition: all .3s ease 0s;
 }
-
+/* CONTENIDO */
 .main-container{
     background-color: #fff;
     width: 90%;
@@ -210,12 +242,12 @@ ul.slider li:target{
     max-width: 1200px;
     padding-top: auto;
 }
-
+/* PARTE DE TEXTO */
 .principal-content{
     display: flex;
     margin: 7.5rem auto 0;
 }
-
+/* TEXTO PRINCIPAL Y ASIDE */
 .main-txt{
     width: 70%;
 }
@@ -304,6 +336,7 @@ footer{
     border-radius: 2.5rem;
     justify-content: center;
     align-items: center;
+    margin: 0 .5rem;
 }
 
 .footer-fab .fab{
@@ -322,69 +355,86 @@ footer{
 /*========== MEDIA QUERYS ==========*/
 
 @media screen and (max-width:1024px){
-    .nav-area{
-        display: none;
+    /* HEADER */
+
+    .header .nav-area{
+        position: absolute;
+        background-color: #262e41;
+        flex-direction: column;
+        left: 0;
+        top: 7.5rem;
+        width: 70%;
+        margin-left: -70%;
+        transition: all .25s ease 0s;
     }
-    
+
+    .nav-area li{
+        display: block;
+        width: 100%;
+        padding: 2rem;
+    }
+
     .header{
         justify-content: center;
     }
 
-    
+    .menu{
+        display: block;
+        position: absolute;
+        left: 1rem;
+        top: 2.25rem;        
+        cursor: pointer;
+        font-size: 3rem;
+        color: white;
+        padding: 0 1rem;
+    }
+
+    #btn-menu:checked ~ nav .nav-area{
+        margin-left: 0%;
+        transition: all .5s ease 0s;
+    }
+    /* MAIN */
+    /* FOOTER */
 }
 
 @media screen and (max-width:768px){
+    /* HEADER */
+    /* MAIN */
     .main-container{
         width: 100%;
     }
-
     .principal-content{
         display: block;
     }
-
-    .principal-content>div,
+    .principal-content>.main-txt,
     .principal-content>aside{
         width: 100%;
     }
-
-    .slider-nav{
-        top: 3rem;
+    .main-txt p,
+    .principal-content>aside p{
+        text-indent: 0rem;
     }
-
-    .slider-nav li a{
-        display: inline-block;
-        width: 10rem;
-        height: 3rem;
-        font-style: 2rem;
-        border-radius: 2rem;
-    }
-}
-
-@media screen and (max-width:320px){
+    /* FOOTER */
     .footer-container{
-        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-container>div{
+        width: 80%;
+        margin: .5rem 0;
+    }
+    .fabs-container{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 80%;
+        margin: auto;
     }
 
-    .imagen{
-        font-size: 3.5rem;
-    }
-
+}
+/* max-width:320px */
+@media screen and (max-width:425px){
     .logo-txt{
         display: none;
-    }
-    .slider-nav{
-        top: 3.5rem;
-    }
-
-    .slider-nav li a{
-        display: inline-block;
-        width: 5rem;
-        height: 3rem;
-        font-style: 2rem;
-        border-radius: 2rem;
-    }
-    .slider-nav li{
-        padding: 0 .5rem;
     }
 }
 
