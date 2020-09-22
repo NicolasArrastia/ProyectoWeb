@@ -368,7 +368,12 @@ footer {
 
     .header .nav-area {
         position: absolute;
-        background-color: #364363;
+        background-color: #3e4c6e;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        border-style: double;
+        border: .5rem solid #5f6a85;
+        border-left: none;
         flex-direction: column;
         left: 0;
         top: 7.5rem;
@@ -380,7 +385,7 @@ footer {
     .nav-area li {
         display: block;
         width: 100%;
-        margin: 2rem 0;
+        margin: 1rem 0;
         padding: 2rem;
         font-size: 1rem;
     }
