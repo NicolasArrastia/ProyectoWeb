@@ -255,6 +255,7 @@ ul.slider li:target {
 .principal-content {
     display: flex;
     margin: 7.5rem auto 0;
+    justify-content: center;
 }
 
 /* TEXTO PRINCIPAL Y ASIDE */
@@ -359,6 +360,21 @@ footer {
     padding: 1rem;
     width: 100%;
     text-align: center;
+}
+
+/*========== CLASES AJUSTES ==========*/
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.w100{
+    width: 100%;
+}
+
+.mt{
+    padding-top: 7.5rem;
 }
 
 /*========== MEDIA QUERYS ==========*/
@@ -491,7 +507,10 @@ footer {
         font-style: 2rem;
         border-radius: 1.5rem;
     }
-
+    .main-txt,
+    .principal-content>aside {
+        padding: 1rem;
+    }
     /* FOOTER */
 
 }
