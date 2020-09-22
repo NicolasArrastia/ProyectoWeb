@@ -151,7 +151,7 @@ header {
 }
 
 .imagen q{
-    quotes: '"' '"';
+    quotes: none;
 }
 
 .bg1{
@@ -433,9 +433,33 @@ footer{
 }
 /* max-width:320px */
 @media screen and (max-width:425px){
+    /* HEADER */
     .logo-txt{
         display: none;
     }
+    /* MAIN */
+    .imagen>div{
+        width: 80%;
+    }
+
+    .slider-nav{
+        text-align: center;
+        position: relative;
+        top: 3rem;
+    }
+
+    .slider-nav li a{
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: #424242;
+        width: 6rem;
+        height: 3rem;
+        font-style: 2rem;
+        border-radius: 1.5rem;
+    }
+    /* FOOTER */
+    
 }
 
 @keyframes logo-animation{
