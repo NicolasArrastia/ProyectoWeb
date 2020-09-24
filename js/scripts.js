@@ -1,0 +1,1 @@
+alert("Ésto es un proyeto, no es una página real");
