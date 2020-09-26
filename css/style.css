@@ -413,6 +413,14 @@ footer {
 
 /*========== CLASES AJUSTES ==========*/
 
+.test{
+    width: 90%;
+    height: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #bcf;
+}
+
 .flex-center{
     display: flex;
     justify-content: center;
