@@ -249,8 +249,7 @@ ul.slider li:target {
     margin: auto;
     max-width: 1200px;
     padding-top: auto;
-    /* text-align: justify; */
-    line-height: 2.8rem;
+
 }
 
 .main-container {
@@ -259,6 +258,7 @@ ul.slider li:target {
     margin: auto;
     max-width: 1200px;
     padding-top: 7.5rem;
+    line-height: 2.8rem;
 }
 
 /* PARTE DE TEXTO */
@@ -266,6 +266,8 @@ ul.slider li:target {
     display: flex;
     margin: 7.5rem auto 0;
     /* padding-top: 7.5rem; */
+    /* text-align: justify; */
+    line-height: 2.8rem;
 }
 
 /* TEXTO PRINCIPAL Y ASIDE */
