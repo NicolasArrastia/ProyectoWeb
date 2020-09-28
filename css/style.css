@@ -249,6 +249,8 @@ ul.slider li:target {
     margin: auto;
     max-width: 1200px;
     padding-top: auto;
+    /* text-align: justify; */
+    line-height: 2.8rem;
 }
 
 .main-container {
