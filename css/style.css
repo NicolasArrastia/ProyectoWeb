@@ -274,6 +274,9 @@ ul.slider li:target {
 .main-txt,
 .principal-content>aside {
     padding: 3rem;
+}
+
+p{
     line-height: 2.8rem;
     text-align: justify;
 }
@@ -469,6 +472,8 @@ footer {
 .card p{
     padding: 1rem;
     font-size: 16px;
+    line-height: 2rem;
+    text-align: center;
 }
 
 .card a{
@@ -594,6 +599,17 @@ footer {
         margin: auto;
     }
 
+    .adjustment{
+        flex-direction: column;
+    }
+
+    .adjustment>div{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .adjustment>*:not(:first-child){
+        margin-top: 2rem;
+    }
 }
 
 /* max-width:320px */
