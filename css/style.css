@@ -276,7 +276,10 @@ ul.slider li:target {
     padding: 3rem;
 }
 
-p{
+.index-container,
+.products-container,
+.principal-content,
+.main-container,{
     line-height: 2.8rem;
     text-align: justify;
 }
