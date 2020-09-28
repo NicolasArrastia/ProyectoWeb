@@ -290,13 +290,14 @@ ul.slider li:target {
 h2 {
     text-decoration: underline;
     font-size: 3rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 h3 {
     text-decoration: none;
     font-style: 2.2rem;
     padding: 0;
+    padding-bottom: 1rem;
 }
 
 .main-txt p {
@@ -312,9 +313,7 @@ h3 {
     width: 46%;
 }
 /* ***** FORM ***** */
-form{
-    width: 45%;
-}
+
 
 [type="text"],[type="email"]{
     padding: .5rem .5rem;
@@ -325,15 +324,42 @@ form{
 
 .map{
     width: 100%;
-    margin: 0 auto;
-    border: .2rem solid black;
+    margin: 0;
+    padding: 0;
     border-radius: 2rem;
 }
 
 /* ************** CONTACTS ************* */
-#contacts .main-container>div>*:not(:first-child){
+#contacts .main-container>div>*{
     margin:1rem 0;
 }
+
+input,textarea{
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: .7rem;
+    font-size: 1.7rem;
+    border:none;
+}
+
+textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 210px;
+    max-height: 210px;
+}
+
+#button{
+    background-color: #31384a;
+    color: white;
+    padding: 2rem;
+}
+
+#button:hover{
+    cursor: pointer;
+    background-color: #485169;
+}
+
 /*========== FOOTER ==========*/
 
 footer {
@@ -449,6 +475,22 @@ footer {
     color: #3498db;
 }
 
+/* ***** EDITORIALES */
+.editorial-logo img{
+    max-width: 200px;
+}
+
+.editorial-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.editoriales-container{
+    padding: 2rem;
+}
 
 /*========== MEDIA QUERYS ==========*/
 
@@ -513,7 +555,10 @@ footer {
 
     /* HEADER */
     /* MAIN */
-    .main-container {
+    .index-container,
+    .main-container,
+    .products-container {
+        margin: 0;
         width: 100%;
     }
 
@@ -548,6 +593,7 @@ footer {
         width: 80%;
         margin: auto;
     }
+
 }
 
 /* max-width:320px */
@@ -582,6 +628,10 @@ footer {
     .main-txt,
     .principal-content>aside {
         padding: 1rem;
+    }
+
+    .editoriales-container{
+        flex-direction: column;
     }
     /* FOOTER */
 
@@ -629,8 +679,16 @@ footer {
 }
 
 .border{
-    border: 1px solid rgba(0, 0, 0, .3);
+    border: 1px solid rgba(0, 0, 0, .5);
     border-radius: 1rem;
+    background-color: rgba(0,0,0,.4);
+}
+
+.borderB{
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 2rem;
 }
 
 .p2{
@@ -639,7 +697,7 @@ footer {
 }
 
 .w50{
-    width: 50%;
+    width: 48%;
 }
 
 .w100{
@@ -650,10 +708,10 @@ footer {
     margin-top: 7.5rem;
 }
 
-.item-list{
-
-}
-
 .pt{
     padding-top: 9rem;
+}
+
+.pb{
+    padding-bottom: 2rem;
 }
